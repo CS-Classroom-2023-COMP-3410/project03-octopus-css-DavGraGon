@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
     <title>The Fascinating World of Octopuses</title>
 </head>
 
@@ -60,10 +61,10 @@
         <div id="quiz-section">
 
             <!-- Image -->
-            <img src="octopus-image.png" alt="Image of an octopus" width="100">
+            <img id="image" src="octopus-image.png" alt="Image of an octopus" width="100">
 
-            <h2>Octopus Quiz</h2>
-            <form action="/submit-quiz" method="POST">
+            <h2 id="oct_header">Octopus Quiz</h2>
+            <form action="/submit-quiz" method="POST" id="form">
                 <!-- Question 1 -->
                 <label for="question1">How many hearts does an octopus have?</label>
                 <input type="text" id="question1" name="question1"><br>
@@ -80,7 +81,7 @@
 
     <!-- Table -->
     <div id="species-table">
-        <h2>Common Octopus Species</h2>
+        <h2 id="Oct_Species">Common Octopus Species</h2>
         <table border="1">
             <tr>
                 <th>Species</th>

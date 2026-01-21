@@ -1,0 +1,103 @@
+/*ALL*/
+body {
+    /*makes the entire page sans-serif*/
+    font-family:sans-serif;
+    background-color: rgb(235, 239, 243);
+}
+
+/*HEADER*/
+#header {
+    display:flex;
+    flex-direction:column;
+    text-align:center;
+    background-color:rgb(22, 113, 215);
+    color:rgb(235, 239, 243);
+}
+#header p{
+    font-style:italic;
+}
+h1{
+    margin-bottom:-10px;
+}
+
+/*The first line of text after the first h2 appears to have less leading*/
+h2+p{
+    margin-bottom:-15px
+}
+
+/*Making h6 be visually the same size as h5*/
+h6{
+    font-size:13.2px;
+}
+
+/*MAIN CONTENT*/
+h2, h3{
+    /*Makes all headings after h1 uppercase. "Commmon Octopus Species" will have to be turned back into title case*/
+    text-transform:uppercase;
+}
+
+#main-content{
+    margin-left:10px;
+}
+
+.important{
+    color:rgb(221, 22, 22);
+    font-weight:bold;
+}
+
+/*QUIZ SECTION*/
+/*Header and form are on the first column, each on their own row.
+The image is spanning the first and second row on the second column to have it centered vertically with the information.*/
+
+#quiz-section{
+    background-color:rgb(222, 240, 247);
+    padding:20px;
+    display:grid;
+    grid-template-columns:4fr 1fr;
+    grid-template-rows:1 fr 1fr;
+    border: 1px solid rgb(216, 216, 216);
+}
+
+#image{
+    border: 3px solid rgb(157, 53, 255);
+    grid-column:2;
+    grid-row:1/span 2;
+    justify-self:flex-end;
+    align-self:center;
+    margin-right:50px;
+}
+
+#form{
+    grid-column:1;
+    grid-row:2;
+}
+
+#oct_header{
+    grid-column:1;
+    grid-row:1;
+}
+
+/*COMMON OCTOPUS SPECIES*/
+#Oct_Species{
+    text-transform:capitalize;
+    margin-bottom:0%;
+}
+
+th{
+    background-color:rgb(157, 157, 157);
+    color:aliceblue;
+    text-align:left;
+    padding:1%;
+}
+
+th, td{
+    padding:5px;
+}
+
+/*FOOTER*/
+#footer{
+    background-color:rgb(201, 201, 201);
+    text-align:center;
+    padding:3px;
+    margin-top:30px;
+}
